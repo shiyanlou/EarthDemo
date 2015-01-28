@@ -224,7 +224,7 @@ int main(int argc,char *argv[]){
 	/* 定义窗口位置 */
 	glutInitWindowPosition (400, 400);
 	/* 显示窗口，窗口标题为执行函数名 */
-	glutCreateWindow("OpenGL #D View");
+	glutCreateWindow("EarthDemo");
 
     /* 调用OpenGL初始化函数 */
 	init ( );
