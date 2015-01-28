@@ -161,7 +161,7 @@ void keyboard ( unsigned char key, int x, int y)
 			break;
 	}
 
-	printf("Enter Key %c zoom=%f, xpos=%f, ypos=%f \n", key);
+	printf("Enter Key %c zoom=%lf, xpos=%lf, ypos=%lf \n", key, zoom, xpos, ypos);
 } 
 
 void display(void){
