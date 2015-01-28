@@ -160,6 +160,8 @@ void keyboard ( unsigned char key, int x, int y)
 			xpos += 0.03;
 			break;
 	}
+
+	printf("Enter Key %c zoom=%f, xpos=%f, ypos=%f \n", key);
 } 
 
 void display(void){
@@ -191,6 +193,7 @@ void processMouse(int button, int state, int x, int y)
 	if (state == GLUT_UP && button == GLUT_WHEEL_UP)                    
 	{  	// 滚轮向上,表示方大,增加缩放比例
 		zoom += 0.02;  
+		printf("Mouse Wheel Up\n");
 		glutPostRedisplay();  
 	}  
 	if (state == GLUT_UP && button == GLUT_WHEEL_DOWN)  
@@ -198,6 +201,7 @@ void processMouse(int button, int state, int x, int y)
 		// 滚轮向下,表示缩小,减少缩放比例
 		if(zoom > 0.02){
 			// 防止zoom太小
+			printf("Mouse Wheel Down\n");
 			zoom -= 0.02;  
 		}
 		
